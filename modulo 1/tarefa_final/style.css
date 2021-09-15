@@ -12,7 +12,7 @@ header {
 
 nav {
     display: flex;
-    padding: 0.5vw 5vw;
+    padding: 0.4vw 5vw;
 }
 
 .nav-left-side {
@@ -33,8 +33,8 @@ nav {
 }
 
 .nav-right-side img {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 
 .nav-left-side img {
@@ -43,28 +43,28 @@ nav {
 }
 
 .nav-search {
-    display: flex;
-    align-items: center;
-    width: 25vw;
-    background: lightblue;
-    margin-left: 1vw;
-    border-radius: 5px;
+    padding-left: 1.2vw;
 }
 
-.nav-search img {
-    width: 20px;
-    height: 20px;
-    padding-left: 0.5vw
-}
-
-.nav-search input {
-    background: lightblue;
+.input-image {
+    background-color: lightblue;
+    background-image: url('icons/loupe.png');
+    background-repeat: no-repeat;
+    background-position: 1vw 50%;
     border: 0px solid lightblue;
-    width: 20vw;
+    width: 30vw;
+    height: 34px;
+    border-radius: 3px;
+}
+
+.input-image::placeholder {
+    position: absolute;
+    left: 4vw;
+    top: 10px;
 }
 
 #photo-profile {
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 figcaption {
