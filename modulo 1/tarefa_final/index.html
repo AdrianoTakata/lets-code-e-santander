@@ -6,53 +6,283 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Adriano Takata | Linkedin </title>
         <link rel="icon" type="image/jpg" href="icons/linkedin.jpg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ropa+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rambla&family=Roboto&family=Ropa+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
         <header>
             <nav>
-                <section class="nav-left-side"> 
-                    <figure> 
-                        <img src="icons/linkedin.jpg" alt="icone do linkedin"/>
-                    </figure>
-                    <figure class="nav-search">
-                        <input class="input-image" type="text" placeholder="Pesquisar"/>
+                <section class="nav-pesquisa"> 
+                    <a href=""> 
+                        <figure> 
+                            <img src="icons/linkedin.jpg" alt="icone do linkedin"/>
+                        </figure>
+                    </a>
+                    <figure id="pesquisa">
+                        <label for="pesquisar"> 
+                            <img id="loupe" src="icons/loupe.png" alt="icone de pesquisar"/>
+                        </label>
+                        <input class="input-pesquisa" id="pesquisar" type="text" placeholder="Pesquisar"/>
                     </figure>
                 </section>
                 
-                <section class="nav-right-side">
-                    <figure>
-                        <img src="icons/home-icon-silhouette.png" alt="icone início"/>
-                        <figcaption> Início </figcaption>
-                    </figure>
+                <section class="nav-icones-fotos">
+                    <div class="nav-icones">
+                        <a href="">
+                            <figure>
+                                <img src="icons/home-icon-silhouette.png" alt="icone início"/>
+                                <figcaption> Início </figcaption>
+                            </figure>
+                        </a>
 
-                    <figure>
-                        <img src="icons/group-of-three-men-standing-side-by-side-hugging-each-other.png" alt="icone minha rede"/>
-                        <figcaption> Minha rede </figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img src="icons/portfolio.png" alt="icone vagas"/>
-                        <figcaption> Vagas </figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img src="icons/chat.png" alt="icone mensagens"/>
-                        <figcaption> Mensagens </figcaption>
-                    </figure>
+                        <a href="">
+                            <figure>
+                                <img src="icons/group-of-three-men-standing-side-by-side-hugging-each-other.png" alt="icone minha rede"/>
+                                <figcaption> Minha rede </figcaption>
+                            </figure>
+                        </a>
+
+                        <a href="">
+                            <figure>
+                                <img src="icons/portfolio.png" alt="icone vagas"/>
+                                <figcaption> Vagas </figcaption>
+                            </figure>
+                        </a>
+
+                        <a href="">
+                            <figure>
+                                <img src="icons/chat.png" alt="icone mensagens"/>
+                                <figcaption> Mensagens </figcaption>
+                            </figure>
+                        </a>
                 
-                    <figure>
-                        <img src="icons/bell.png" alt="icone notificações"/>
-                        <figcaption> Notificações </figcaption>
-                    </figure>
-                
-                    <figure >
-                        <img id="photo-profile" src="image/foto_perfil.jpeg" alt="foto perfil" />
-                        <figcaption> Eu </figcaption>
-                    </figure>
+                        <a href="">
+                            <figure>
+                                <img src="icons/bell.png" alt="icone notificações"/>
+                                <figcaption> Notificações </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="nav-perfil">
+                        <a href="">
+                            <figure>
+                                <img src="image/foto_perfil.jpeg" alt="foto perfil" />
+                                <figcaption> Eu </figcaption>
+                            </figure>
+                        </a>
+                    </div>
                 </section>
             </nav>
         </header>
+
+        <main>
+            <section class="data-profile">
+                <div id="photo-capa">
+                    <figure id="photo-profile">
+                        <img src="image/foto_perfil.jpeg" alt="foto de capa"/>
+                    </figure>
+                </div>
+                
+                <article>
+                    <h1> Adriano Takata </h1>
+                    <p> Licenciatura em Matemática | Análise Numérica | Mecânica dos Fluidos Computacional | Python | Ciências de Dados </p>
+                    <div id="container-data-local">
+                        <p> Presidente Prudente, São Paulo, Brasil <span>&#183;</span> <span id="informacoes-contato"> informações de contato </span> </p>
+                    </div>
+                    <div class="container-button">
+                        <button id="b1"> Tenho interesse em ...</button>
+                        <button id="b2"> Adicionar seção </button>
+                        <button id="b2"> Mais </button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="experience-formacao">
+                <article class="experience">
+                    <div class="title-experience">
+                        <h2> Experiência </h2>
+                    </div>
+
+                    <article class="job">
+                        <div class='job-data'>
+                            <figure class="logo-job">
+                                <img src="image/cefet.png" alt="logo cefet-mg"/>
+                            </figure>
+                            <div class='job-information'>
+                                <h3> Professor substituto</h3>
+                                <p> CEFET MG - Campus Curvelo <span>&#183;</span> Temporário</p>
+                                <div id="container-data-local">
+                                    <p> jan. de 2021 - o momento <span>&#183;</span> 9 meses </p>
+                                    <p> Curvelo, Minas Gerais, Brasil</p>
+                                </div>
+                                <div>
+                                    <p> Professor do 2° ano do ensino médio tecnológico </p>
+                                    <p> Professor do ensino superior das disciplinas de: </p>
+                                    <ul>
+                                        <li> Cálculo I </li>
+                                        <li> Geometria Analítica e Análise Vetorial </li>
+                                        <li> Introdução ao Cálculo </li>
+                                        <li> Estatística </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="job">
+                        <div class='job-data'>
+                            <figure class="logo-job">
+                                <img src="image/unesp.jpeg" alt="logo unesp"/>
+                            </figure>
+                            <div class='job-information'>
+                                <h3> Professor substituto</h3>
+                                <p> CEFET MG - Campus Curvelo <span>&#183;</span> Temporário</p>
+                                <div id="container-data-local">
+                                    <p> jan. de 2021 - o momento <span>&#183;</span> 9 meses </p>
+                                    <p> Curvelo, Minas Gerais, Brasil</p>
+                                </div>
+                                <div>
+                                    <p> Professor do 2° ano do ensino médio tecnológico </p>
+                                    <p> Professor do ensino superior das disciplinas de: </p>
+                                    <ul>
+                                        <li> Cálculo I </li>
+                                        <li> Geometria Analítica e Análise Vetorial </li>
+                                        <li> Introdução ao Cálculo </li>
+                                        <li> Estatística </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+
+                <artcile class="formacao">
+                    <div class="title-experience">
+                        <h2> Formação Acadêmica </h2>
+                    </div>
+
+                    <article class="job">
+                        <div class='job-data'>
+                            <figure class="logo-job">
+                                <img src="image/usp.jpeg" alt="logo usp"/>
+                            </figure>
+                            <div class='job-information'>
+                                <h3> Instituto de Ciência Matemáticas e de Computação (ICMC)</h3>
+                                <p> Doutorado, Ciência da Computação e Matemática Computacional, Aprovado </p>
+                            
+                                <div id="container-data-local">
+                                    <p> 2015 - 2020 </p>
+                                </div>
+                                <div>
+                                    Estudo numérico de escoamento transional sobre placa côncava com perturbações não estacionárias
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="job">
+                        <div class='job-data'>
+                            <figure class="logo-job">
+                                <img src="image/unesp.jpeg" alt="logo unesp"/>
+                            </figure>
+                            <div class='job-information'>
+                                <h3> UNESP - Universidade Estadual Paulista "Júlio de Mesquita Filho" </h3>
+                                <p> Mestado, Matemática Computacional e Aplicada, Aprovado </p>
+                                <div id="container-data-local">
+                                    <p> 2015 - 2015 </p>
+                                </div>
+                                <div>
+                                    <p> Aspectos teórico-numéricos do método SPH e MPS </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="job">
+                        <div class='job-data'>
+                            <figure class="logo-job">
+                                <img src="image/unesp.jpeg" alt="logo unesp"/>
+                            </figure>
+                            <div class='job-information'>
+                                <h3> UNESP - Universidade Estadual Paulista "Júlio de Mesquita Filho" </h3>
+                                <p> Graduação, Licenciatura em Matemática </p>
+                                <div id="container-data-local">
+                                    <p> 2009 - 2012 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </artcile>
+            </section>
+
+  
+
+            <!--                <article class="formacao-academica">
+                    <h2 id="title-formacao-experiencia"> Formação acadêmica </h2>
+
+                    <div id="conteiner-job">
+                        <figure class="figure-formacao-experciencia">
+                            <img id="logo-formacao-experiencia" src="image/usp.jpeg" alt="logo usp"/>
+                        </figure>
+                        
+                        <div id="job-information-initial">
+                            <h3> Instituto de Ciência Matemáticas e de Computação (ICMC)</h3>
+                            <p> Doutorado, Ciência da Computação e Matemática Computacional, Aprovado </p>
+                            
+                            <div id="container-data-local">
+                                <p> 2015 - 2020 </p>
+                            </div>
+
+                            <div>
+                                Estudo numérico de escoamento transional sobre placa côncava com perturbações não estacionárias
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="conteiner-job">
+                        <figure class="figure-formacao-experciencia">
+                            <img id="logo-formacao-experiencia" src="image/unesp.jpeg" alt="logo unesp" />
+                        </figure>
+                        <div id="job-information" >
+                            <h3> UNESP - Universidade Estadual Paulista "Júlio de Mesquita Filho" </h3>
+                            <p> Mestado, Matemática Computacional e Aplicada, Aprovado </p>
+                            <div id="container-data-local">
+                                <p> 2015 - 2015 </p>
+                            </div>
+                            <div>
+                                <p> Aspectos teórico-numéricos do método SPH e MPS </p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div id="conteiner-job">
+                        <figure class="figure-formacao-experciencia">
+                            <img id="logo-formacao-experiencia" src="image/unesp.jpeg" alt="logo unesp" />
+                        </figure>
+                        <div id="job-information">
+                            <h3> UNESP - Universidade Estadual Paulista "Júlio de Mesquita Filho" </h3>
+                            <p> Graduação, Licenciatura em Matemática </p>
+                            <div id="container-data-local">
+                                <p> 2009 - 2012 </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            -->
+
+        </main>
     </body>
 </html>
