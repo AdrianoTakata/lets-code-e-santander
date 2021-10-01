@@ -47,3 +47,56 @@ const getVotersStats = (voters) => {
 }
 
 console.log(getVotersStats(voters))
+
+
+// Soma de valores de um objeto de um array
+
+const soma = [{x:1}, {x:2}, {x:3}]. reduce((acc, {x}) => {
+    return acc + x;
+},0)
+
+console.log(soma)
+
+// redução de um array de arrays
+
+const reduzido = [[0,1], [2,3], [4,5]].reduce( (acc, value) => {
+    // console.log(value); value is array
+    return acc.concat(value)
+},[])
+
+console.log(reduzido)
+
+// Contando valores iguais em um objeto
+
+let nomes = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
+
+const quatidadeNomes = nomes.reduce( (todosNomes, nome) => {
+    if (nome in todosNomes) {
+        todosNomes[nome]++;
+    } else {
+        todosNomes[nome] = 1;
+    }
+    return todosNomes;
+}, {});
+
+console.log(quatidadeNomes);
+
+// Agrupando obejtos por uma propriedade
+
+const pessoas = [
+    { nome: 'Alice', idade: 21 },
+    { nome: 'Max', idade: 20 },
+    { nome: 'Jane', idade: 20 }
+];
+
+function agruparPor (objArray, property) {
+    return objArray.reduce( (acc, obj) => {
+        let key = obj[property];
+        if ( !acc[key]) acc[key] = [];
+        
+        acc[key].push(obj);
+        return acc;
+    }, {});
+}
+
+console.log(agruparPor(pessoas, 'idade'));
