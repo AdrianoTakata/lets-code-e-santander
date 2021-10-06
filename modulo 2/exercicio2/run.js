@@ -47,6 +47,8 @@ const todos = [
     }
   ];
 
+  console.log(todos)
+
   function countCompleteEntries(todos) {
     return todos.reduce((acc, {completed}) => {
         let property = completed ? 'numberCompletedTrue' : 'numberCompleteFalse';
@@ -54,4 +56,4 @@ const todos = [
     }, {numberCompletedTrue: 0, numberCompleteFalse: 0});
   }
 
-  console.log(countCompleteEntries(todos));
+  //console.log(countCompleteEntries(todos));
