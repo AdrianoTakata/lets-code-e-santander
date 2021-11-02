@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="main-header">
+      <ul>
+        <li> <a id="logo" href=""> <img src="logo.png" /> </a> </li>
+        <li> <a class="icon" href=""> COMPRAR </a> </li>
+        <li> <a class="icon" href=""> ALUGAR </a> </li>
+        <li> <a class="icon" href=""> IMÓVEIS NOVOS </a> </li>
+        <li> <a class="icon" href=""> SELEÇÃO VIVA REAL </a> </li>
+        <li> <a class="icon" href=""> DESCOBRIR </a> </li>
+        <li> <a class="icon" href=""> FINANCIAMENTO </a> </li>
+      </ul>
+      <ul>
+        <li> <a class="icon" href=""> ANUNCIAR IMÓVEIS </a> </li>
+        <li> <a id="last-icon" class="icon" href=""> ENTRAR </a> </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <aside class="left-side">
+        <form class="container-form1">
+          <div class="container-locate">
+            <label> LOCALIZAÇÃO DO IMÓVEL </label>
+            <input class="input-locate" placeholder="Digite uma rua, bairro ou cidade" />
+          </div>
+
+          <div class="container-checkbox">
+            <p> IMÓVEL COM </p>
+            <div>
+              <input type="checkbox" class="on-off-checkbox" id="container-checkbox" />
+              <label for="container-checkbox" class="on-off-button"> </label>
+              <span> Tour Virtual ou Vídeos </span>
+            </div>
+          </div>
+
+          <div class="container-type">
+            <label> TIPO DE IMÓVEIS </label>
+            <select required>
+              <option value="" disabled selected hidden> Mostrar todos </option>
+            </select>
+          </div>
+          <div class="container-value">
+            <div>
+              <label id="minimum-value"> PREÇO MÍNIMO </label>
+              <div>
+                <input class="input-value" placeholder="R$                        " />
+              </div>
+            </div>
+            <span class="line"> --- </span>
+            <div>
+              <label id="maximum-value"> PREÇO MÁXIMO </label>
+              <input class="input-value" placeholder="R$          ilimitado" />
+            </div>
+          </div>
+
+          <div class="container-button">
+            <label> NÚMERO DE QUARTOS </label>
+            <ul>
+              <li> <button> 1+ </button> </li>
+              <li> <button> 2+ </button> </li>
+              <li> <button> 3+ </button> </li>
+              <li> <button> 4+ </button> </li>
+              <li> <button> 5+ </button> </li>
+            </ul>
+          </div>
+        </form>
+
+        <form class="container-form2">
+          <div class="container-value">
+            <div>
+              <label id="minimum-value"> ÁREA MÍNIMA </label>
+              <input class="input-value" placeholder="m&sup2" />
+            </div>
+            <div>
+              <label id="maximum-value"> PREÇO MÁXIMO </label>
+              <input class="input-value" placeholder="ilimitado m&sup2" />
+            </div>
+          </div>
+
+          <div class="container-button">
+            <label> NÚMERO DE VAGAS NA GARAGEM </label>
+            <ul>
+              <li> <button> 1+ </button> </li>
+              <li> <button> 2+ </button> </li>
+              <li> <button> 3+ </button> </li>
+              <li> <button> 4+ </button> </li>
+              <li> <button> 5+ </button> </li>
+            </ul>
+          </div>
+
+          <div class="container-button">
+            <label> NÚMERO DE BANHEIROS </label>
+            <ul>
+              <li> <button> 1+ </button> </li>
+              <li> <button> 2+ </button> </li>
+              <li> <button> 3+ </button> </li>
+              <li> <button> 4+ </button> </li>
+              <li> <button> 5+ </button> </li>
+            </ul>
+          </div>
+        </form>
+      </aside>
+
+      <div class="right-side">
+        <div class="nav-right-side">
+          <ul>
+            <li class="blue-underline">
+              <a class="right-icon" href=""> COMPRAR </a>
+            </li>
+            <li>
+              <a class="right-icon" href=""> ALUGAR </a>
+            </li>
+            <li>
+              <a class="right-icon" href=""> IMÓVEIS NOVOS </a>
+            </li>
+            <li>
+              <a class="right-icon" href=""> SELEÇÃO VIVA REAL </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="main.js" type="module"> </script>
+</body>
+
+</html>

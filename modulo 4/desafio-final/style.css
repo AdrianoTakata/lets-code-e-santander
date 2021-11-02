@@ -1,0 +1,464 @@
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  --color-blue-header: #1190CD;
+  --color-blue-header-opacity: #50c1f5;
+  --color-gray-upper: #757575;
+  --color-gray-button: #dad4d4;
+  --color-left-side: #fdd685;
+  --color-font-side: #0000008A;
+  --color-border: rgba(0,0,0,0.12);
+  --color-underline: #ebebeb;
+  --color-gray-opacity: rgba(0,0,0,.54);
+  --new-font-size13: 0.8125rem;
+  --new-font-size12: 0.75rem;
+  --new-font-size20: 1.25rem;
+  --new-font-size24: 1.5rem;
+}
+
+/* start header */
+
+header {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  background-color: var(--color-blue-header);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 48px;
+}
+
+.main-header ul {
+  display: flex;
+}
+
+.main-header a {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: center;
+  height: 56px;
+  font-size: var(--new-font-size13);
+  font-weight: 550;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 0px 16px;
+}
+
+header .icon:hover {
+  background-color: var(--color-blue-header-opacity);
+}
+
+#logo {
+  padding-left: 0px ;
+}
+
+/* #last-icon {
+  padding-right: 0px;
+} */
+
+/* end header */
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  margin-top: 40px;
+}
+
+/* start left side */
+
+section {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 48px;
+}
+
+.container-form1 {
+  border-radius: 3px;
+  background-color: var(--color-left-side);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.container-form2 {
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid var(--color-underline);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+
+input {
+  display: block;
+  box-sizing: border-box;
+  font-size: var(--new-font-size12);
+  color: var(--color-font-side);
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  width: 254px;
+  height: 44px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+label {
+  display: inline-block;
+  font-size: var(--new-font-size13);
+  color: var(--color-font-side);
+  margin-bottom: 8px;
+}
+
+select {
+  display: block;
+  font-size: var(--new-font-size12);
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: white;
+  color: rgba(0,0,0,.54);
+  width: 254px;
+  height: 44px;
+  padding: 10px;
+}
+
+.input-value {
+  display: block;
+  box-sizing: border-box;
+  font-size: var(--new-font-size12);
+  width: 119px;
+  height: 44px;
+  text-align: right;
+}
+
+.container-value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-lower-locate {
+  background-color: var(--color-left-side);
+  border: 1px solid var(--color-left-side);
+  font-size: var(--new-font-size12);
+  color: var(--color-font-side);
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.button-lower-locate span {
+  display: inline-block;
+  border-radius: 100%;
+  /* border: 1px solid var(--color-left-side); */
+  padding: 1px 5px;
+}
+
+.button-lower-locate span:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+/* start button style IOS */
+
+.on-off-checkbox {
+  position: absolute;
+  left: -99999px;
+}
+
+.on-off-button {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+
+.on-off-button::before,
+.on-off-button::after {
+  content: "";
+}
+
+.on-off-button::before {
+  display: inline-block;
+  width: 3.25rem;
+  height: 2rem;
+  background-color:#ee6500 ;
+  border-radius: 2rem;
+}
+
+.on-off-button::after {
+  background-color: white;
+  position: absolute;
+  top:0.05rem;
+  left: 0.05rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 100%;
+}
+
+.on-off-checkbox:checked + .on-off-button::before {
+  background-color:var(--color-blue-header);
+}
+
+.on-off-checkbox:checked + .on-off-button::after {
+  left: 1.25rem;
+}
+.container-checkbox p {
+  display: block;
+  font-size: var(--new-font-size13);
+  color: var(--color-font-side);
+  margin-bottom: 8px;
+}
+
+.container-checkbox span {
+  display: inline-block;
+  font-size: var(--new-font-size13);
+  color: var(--color-font-side);
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+
+.container-checkbox div {
+  display: flex;
+  align-items: center;
+}
+
+/* end button style IOS */
+
+.container-button ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-button button {
+  box-sizing: border-box;
+  border: 1px solid var(--color-border);
+  font-size: var(--new-font-size13);
+  border-radius: 32px;
+  max-width: 44px;
+  height: 32px;
+  margin-top: 8px;
+  padding: 0px 12px;
+  background-color: #FFFFFF;
+}
+
+.container-button button:hover {
+  background-color: var(--color-gray-button);
+}
+
+
+/* end left side */
+
+/* start right side */
+.right-side {
+  margin-left: 20px;
+  width: 100vw;
+}
+
+.nav-right-side {
+  color: var(--color-blue-header);
+}
+
+.nav-right-side > ul {
+  display: flex;
+  border-bottom: 1px solid var(--color-underline);
+}
+
+.right-icon {
+  font-size: var(--new-font-size13);
+  color: var(--color-header);
+  text-decoration: none;
+  line-height: 44px;
+  padding: 0 24px;
+}
+
+.blue-underline {
+  border-bottom: 5px solid var(--color-blue-header);
+}
+
+.container-upper {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container-upper p {
+  max-width: 100vw;
+  box-sizing: border-box;
+  padding: 0 48px;
+  font-size: var(--new-font-size13);
+  color: var(--color-gray-upper);
+  
+}
+
+.container-lower-nav {
+  font-size: var(--new-font-size20);
+  color: #000000DE;
+  margin-top: 20px
+}
+
+.container-lower-nav span {
+  font-size: var(--new-font-size24);
+  font-weight: 600;
+}
+
+.container-lower-nav button {
+  background-color: #FFFFFF;
+  font-size: var(--new-font-size13);
+  color: var(--color-blue-header);
+  border: 1px solid var(--color-blue-header);
+  border-radius: 1rem;
+  margin: 15px 0 ;
+  padding: 7px 12px 7px 12px;
+}
+
+.container-lower-nav > button > span {
+  font-size: var(--new-font-size13);
+  margin-left: 12px
+}
+
+.container-lower-nav button:hover {
+  background-color: #dcf4ff;
+}
+
+.container-card {
+  display: flex;
+  border: 1px solid var(--color-underline);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+
+.container-card  img {
+  width: 360px;
+  height: 240px;
+}
+
+.container-card  ul {
+  display: flex;
+}
+
+.container-card-info {
+  flex-grow: 1;
+}
+
+.container-card-info-upper {
+  padding: 16px;
+}
+
+.paragraph-locate {
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 24px;
+  font-size: var(--new-font-size13);
+  color: var(--color-gray);
+}
+
+.paragraph-title {
+  font-size: var(--new-font-size20);
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 28px;
+}
+
+.list1 {
+  display: flex;
+
+  font-size: var(--new-font-size13);
+  margin: 12px 0;
+  line-height: 24px;
+}
+
+.list1 li {
+  margin-left: 8px;
+}
+
+.list1 li:first-child {
+  margin-left: 0px;
+}
+
+.list1 li span {
+  font-weight: 600;
+}
+
+.list2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  font-size: var(--new-font-size13);
+}
+
+.list2 li {
+  box-sizing: border-box;
+  margin-left: 8px;
+  background-color: #ebebeb;
+  color: #a8a8a8;
+  font-weight: 500;
+  line-height: 21px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  padding: 0 8px;
+}
+
+.list2 li:first-child {
+  margin-left: 0px;
+}
+
+.container-card-info-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.paragraph-price {
+  font-size: var(--new-font-size20);
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 30px;
+}
+
+.paragraph-condo-fee {
+  font-size: var(--new-font-size13);
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 19px;
+}
+
+.paragraph-condo-fee span {
+  font-weight: 600;
+}
+
+/* .div-button {
+  display: none;
+} */
+
+
+.button-tel-msg {
+  display: inline;
+  font-size: var(--new-font-size13);
+  line-height: 23px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-align: center;
+  color: #ee6500;
+  padding: 8px 12px;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.button-tel-msg:hover {
+  background-color: #ee6500;
+  color: white;
+}
+
