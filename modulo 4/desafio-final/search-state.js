@@ -12,7 +12,9 @@ function searchState(nameCity) {
       return state;
     }
   })
-  return [stateName, stateName.toLowerCase()];
+  if (stateName) return [stateName, stateName.toLowerCase()];
+
+  return [undefined, undefined];
 }
 
 export default searchState;

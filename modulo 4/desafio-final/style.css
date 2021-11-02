@@ -10,6 +10,7 @@
   --color-border: rgba(0,0,0,0.12);
   --color-underline: #ebebeb;
   --color-gray-opacity: rgba(0,0,0,.54);
+  --color-gray: rgba(0,0,0,.54);
   --new-font-size13: 0.8125rem;
   --new-font-size12: 0.75rem;
   --new-font-size20: 1.25rem;
@@ -58,10 +59,6 @@ header .icon:hover {
 #logo {
   padding-left: 0px ;
 }
-
-/* #last-icon {
-  padding-right: 0px;
-} */
 
 /* end header */
 
@@ -338,9 +335,12 @@ select {
   cursor: pointer;
 }
 
+.container-card:hover {
+  box-shadow: 0 0 1px black;
+}
 
 
-.container-card  img {
+.container-card img {
   width: 360px;
   height: 240px;
 }
@@ -353,7 +353,7 @@ select {
   flex-grow: 1;
 }
 
-.container-card-info-upper {
+.container-card-info-detail {
   padding: 16px;
 }
 
@@ -374,7 +374,6 @@ select {
 
 .list1 {
   display: flex;
-
   font-size: var(--new-font-size13);
   margin: 12px 0;
   line-height: 24px;
@@ -439,13 +438,8 @@ select {
   font-weight: 600;
 }
 
-/* .div-button {
-  display: none;
-} */
-
-
 .button-tel-msg {
-  display: inline;
+  display: inline-block;
   font-size: var(--new-font-size13);
   line-height: 23px;
   font-weight: 600;
@@ -462,3 +456,21 @@ select {
   color: white;
 }
 
+.container-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 44px;
+}
+
+.container-error p {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#error-red {
+  color: red;
+  font-weight:lighter;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}

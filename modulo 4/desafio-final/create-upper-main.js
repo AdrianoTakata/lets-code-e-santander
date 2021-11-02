@@ -1,4 +1,4 @@
-function buildUpperMainText(mainEl, nameStateReal, nameCityReal) {
+function createUpperMainText(mainEl, nameStateReal, nameCityReal) {
   const divContainer = document.createElement('div');
   divContainer.classList.add("container-upper")
   const paragraphUpper = document.createElement('p');
@@ -7,4 +7,4 @@ function buildUpperMainText(mainEl, nameStateReal, nameCityReal) {
   mainEl.prepend(divContainer);
 }
 
-export default buildUpperMainText;
+export default createUpperMainText;

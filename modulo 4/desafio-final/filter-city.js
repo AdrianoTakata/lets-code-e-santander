@@ -12,5 +12,7 @@ function filterCity(cityIn) {
     return ["rio-de-janeiro", "Rio de Janeiro"];
   }
 
+  return [undefined, undefined];
+
 }
 export default filterCity;
