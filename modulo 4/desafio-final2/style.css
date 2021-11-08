@@ -67,7 +67,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100vw; 
+  /* max-width: 100vw;  */
   margin-top: 40px;
 }
 
@@ -77,8 +77,9 @@ section {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+  flex-basis: 1500vw;
   /* margin: 0 auto; */
-  max-width: 100%;
+  /* max-width: 100%; */
   padding: 0 48px;
 }
 
@@ -249,11 +250,6 @@ select {
   background-color: #FFFFFF;
 }
 
-.container-button-first {
-  margin-bottom: 15px;
-} 
-
-
 .container-button button:hover {
   background-color: var(--color-gray-button);
 }
@@ -263,7 +259,7 @@ select {
 /* start right side */
 .right-side {
   margin-left: 20px;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .nav-right-side {

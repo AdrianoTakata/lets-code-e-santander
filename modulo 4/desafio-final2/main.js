@@ -15,12 +15,17 @@ const rightSide = document.querySelector(".right-side");
 const navRightSide = document.querySelector(".nav-right-side");
 
 
-locate.addEventListener('blur', getCity);
+function init() {
 
+  locate.addEventListener('blur', getCity);
+
+}
+
+init();
 
 async function getCity(evt) {
   const cityIn = evt.target.value;
-  
+
   if (cityIn.trim()) {
     const [nameCityQuery, nameCityReal] = filterCity(cityIn);
 

@@ -1,6 +1,6 @@
 import clearScreen from "./clearScreen.js";
 
-function showError(error) {
+function showError() {
 
   clearScreen();
   
@@ -16,7 +16,7 @@ function showError(error) {
   paragrah2.innerText = "ALGO DEU ERRADO NA SUA BUSCA."
   const paragrah3 = document.createElement("p");
   paragrah3.id = "error-red";
-  paragrah3.innerText = `status ${error}`;
+  paragrah3.innerText = "status 500";
   const paragrah4 = document.createElement("p");
   paragrah4.innerText = "POR FAVOR, TENTE NOVAMENTE!"
 

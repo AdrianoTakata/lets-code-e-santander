@@ -6,12 +6,11 @@ async function fetchJson(url) {
     if (response.ok) {
       return response.json();
     } else {
-      showError(response.status);
-      throw new Error(response.status);
+      throw new Error(response.statusText);
     }
   } catch (error) {
-      console.log(error)
-      throw new Error(error);
+      showError();
+      throw error;
   }
 }
 
