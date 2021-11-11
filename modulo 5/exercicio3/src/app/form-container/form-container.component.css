@@ -1,0 +1,49 @@
+div {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 400px;
+}
+
+input {
+  box-sizing: border-box;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+label {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+button {
+  width: 150px;
+  margin: 0 auto;
+  background-color: rgb(38, 150, 255);
+  color: white;
+}
+
+button:disabled {
+  
+  background-color: lightgray;
+  color: white;
+
+}
+
+.ng-invalid .ng-touched {
+  border-bottom: 2px solid red;
+}
+
+.ng-touched .ng-valid {
+  border-bottom: 2px solid lightgray;
+}

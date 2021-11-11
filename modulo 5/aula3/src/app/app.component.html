@@ -1,0 +1,6 @@
+<form [formGroup]="father" (ngSubmit)="showUsProperties()">
+  <input type="text" formControlName="name" />
+  <input type="text" formControlName="lastName" />
+  <button [disabled]="!father.valid"> Click me </button>
+</form>
+

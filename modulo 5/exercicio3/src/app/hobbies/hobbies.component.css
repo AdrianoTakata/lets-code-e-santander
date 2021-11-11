@@ -1,0 +1,27 @@
+input {
+  width: 400px;
+  box-sizing: border-box;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+li {
+  text-align: center;
+  border: 1px solid aqua;
+  background-color: aqua;
+  border-radius: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 2px 5px;
+  margin-bottom: 20px;
+}

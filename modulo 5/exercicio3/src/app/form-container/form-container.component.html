@@ -1,0 +1,9 @@
+<div>
+  <form [formGroup]="formContainer">
+    <input type="text" placeholder="Digite seu nome" formControlName="name" />
+    <input type="text" placeholder="Digite sua cidade" formControlName="city" />
+    <label> <input type="checkbox" (change)="checkValue($event)" /> Deseja informa alguns hobbies? </label>
+    <app-hobbies *ngIf="checked"></app-hobbies>
+    <button type="button" [disabled]="!formContainer.valid"> Enviar </button>
+  </form>
+</div>

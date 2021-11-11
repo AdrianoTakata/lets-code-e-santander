@@ -1,0 +1,11 @@
+<div>
+  <form [formGroup]="formContainer">
+    <input type="email" placeholder="Digite o seu e-mail" [class]="{inputs: 1 === 1}" formControlName="email" />
+    <input type="password" placeholder="Digite a sua senha" formControlName="password" />
+    <button type="button" [disabled]="!formContainer.valid"> Login in </button>
+    <p *ngif="false"> {{data | date : 'short'}}</p>
+    <ul>
+      <li *ngFor="let item of items"> {{item}}</li>
+    </ul>
+  </form>
+</div>
