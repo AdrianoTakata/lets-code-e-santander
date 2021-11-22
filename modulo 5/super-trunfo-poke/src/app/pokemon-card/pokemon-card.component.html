@@ -1,0 +1,12 @@
+<div class="container-card" class={{pokeInfo.type}}>
+  <p> {{ pokeInfo['name'].charAt(0).toUpperCase() + pokeInfo['name'].slice(1) }}</p>
+  <div class="container-image">
+    <img src={{pokeInfo.img}} />
+  </div>
+  <ul>
+    <li> <span> Attack </span> <span> {{pokeInfo.attack}} </span> </li>
+    <li> <span> Defese </span> <span> {{pokeInfo.defense}} </span> </li>
+    <li> <span> Life </span> <span> {{pokeInfo.life}} </span> </li>
+    <li> <span> Speed </span> <span> {{pokeInfo.speed}} </span> </li>
+  </ul>
+</div>

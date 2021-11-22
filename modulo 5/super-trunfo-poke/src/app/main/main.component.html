@@ -1,0 +1,7 @@
+<div class="container-main-card">
+  <app-pokemon-card *ngFor="let pokemon of pokemonInfo" [pokeInfo]="pokemon"> </app-pokemon-card>
+</div>
+
+<div class="container-select">
+  <app-select-attribute (selectedAttribute)="getSelectedValue($event)"></app-select-attribute>
+</div>

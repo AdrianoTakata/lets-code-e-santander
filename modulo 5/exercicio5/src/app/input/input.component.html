@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <span> Pesquisa de fotos de Cachorros </span>
+</mat-toolbar>
+
+<div>
+  <form>
+    <input type="text" placeholder="Digite uma raça de cachorro" (blur)="getName($event)">
+  </form>
+
+
+  <div *ngIf="error; else error1">
+    <div class="container-img" *ngIf="loading; else loading1">
+      <ng-container *ngFor="let item of linkImage; let i = index">
+        <div class="card-img" *ngIf="i < 5">
+          <img mat-card-image src={{item}} />
+        </div>
+      </ng-container>
+    </div>
+
+    <ng-template #loading1>
+      <mat-spinner> </mat-spinner>
+    </ng-template>
+  </div>
+
+  <ng-template #error1>
+    <div>
+      Oopss, algo deu errado, tente novamente!
+    </div>
+  </ng-template>
+</div>
